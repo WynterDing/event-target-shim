@@ -858,5 +858,5 @@ if (
 }
 
 export default EventTarget;
-export { defineEventAttribute, EventTarget };
+export { EventTarget, defineEventAttribute };
 //# sourceMappingURL=event-target-shim.mjs.map

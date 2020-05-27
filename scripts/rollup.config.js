@@ -1,5 +1,7 @@
 import babel from "rollup-plugin-babel"
 import minify from "rollup-plugin-babel-minify"
+import commonjs from 'rollup-plugin-commonjs'
+
 
 const banner = `/**
  * @author Toru Nagashima <https://github.com/mysticatea>
@@ -47,6 +49,7 @@ export default [
             outro: umdOutro,
         },
         plugins: [
+            commonjs(),
             babel({
                 babelrc: false,
                 presets: [

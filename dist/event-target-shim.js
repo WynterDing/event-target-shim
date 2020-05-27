@@ -861,9 +861,9 @@ if (
     Object.setPrototypeOf(EventTarget.prototype, window.EventTarget.prototype);
 }
 
-exports.defineEventAttribute = defineEventAttribute;
 exports.EventTarget = EventTarget;
 exports.default = EventTarget;
+exports.defineEventAttribute = defineEventAttribute;
 
 module.exports = EventTarget
 module.exports.EventTarget = module.exports["default"] = EventTarget
